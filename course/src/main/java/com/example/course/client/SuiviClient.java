@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "suivi",url = "${application.config.suivi-url}")
+@FeignClient(name = "suivie_cours")
 public interface SuiviClient{
 
     @GetMapping("/students/{course-id}")
